@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="125dp"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:id="@+id/relative_assignments"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/data_rows_bg">
+
+        <TextView
+            android:id="@+id/data_title_assignment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="65dp"
+            android:textColor="@color/white"
+            android:text="Assignment_Subject Name"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:layout_alignParentStart="true"
+            android:gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/data_desc_assignment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="65dp"
+            android:layout_below="@id/data_title_assignment"
+            android:textColor="@color/white"
+            android:text="Assignment Description"
+            android:fontFamily="casual"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="10dp"
+            android:textSize="13sp"
+            />
+        <TextView
+            android:id="@+id/deadline_assignments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="65dp"
+            android:layout_below="@id/data_desc_assignment"
+            android:text="Deadline: 11/12/2021"
+            android:textColor="@color/white"
+            android:fontFamily="casual"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="10dp"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/data_done_assignments"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="5dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:visibility="invisible"
+        android:src="@mipmap/alert"/>
+</RelativeLayout>

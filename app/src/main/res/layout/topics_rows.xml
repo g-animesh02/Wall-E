@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="95dp"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:id="@+id/relative_topics"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/data_rows_bg">
+
+        <TextView
+            android:id="@+id/data_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="65dp"
+            android:textColor="@color/white"
+            android:text="Text / Assignment"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+
+            android:textSize="17sp"
+            android:layout_alignParentStart="true"
+            android:gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/data_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="65dp"
+            android:layout_below="@id/data_title"
+            android:textColor="@color/white"
+            android:text="Text / Assignment Description"
+            android:fontFamily="casual"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="15sp"
+            />
+        <CheckBox
+            android:id="@+id/checkbox_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/data_done"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="10dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="visible"
+        android:src="@mipmap/success_smiley"/>
+</RelativeLayout>

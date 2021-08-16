@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="225dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/subjects_rows_mainview">
+
+    <RelativeLayout
+        android:id="@+id/relative_subjects"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/subject_rows">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/subjectName"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="casual"
+            android:text="Subject Name"
+
+            android:autoSizeMaxTextSize="25sp"
+            android:autoSizeMinTextSize="20sp"
+
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/subject_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:fontFamily="casual"
+                android:layout_marginTop="5dp"
+                android:text="Road map to Data Science"
+                android:textColor="@color/white"
+
+                android:autoSizeMinTextSize="14sp"
+                android:autoSizeMaxTextSize="16sp"
+                android:textSize="15sp"
+
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/subject_next"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="0.65"
+                android:background="@drawable/subject_rows"
+                android:src="@drawable/next" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:id="@+id/subjectPic"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/datascience" />
+
+
+</RelativeLayout>
+

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ToDo</string>
+    <string name="subject_name">Subject Name</string>
+    <string name="add_topic">Add Topic</string>
+    <string name="add_assignment">Add Assignment</string>
+    <string name="don_t_repeat_the_task">Don\'t repeat the task.</string>
+    <string name="repeat_the_task">Repeat the task.</string>
+</resources>
